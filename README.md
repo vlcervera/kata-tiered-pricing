@@ -3,7 +3,7 @@
 Definition of exercice in: [Definition](./DEFINITION.md)
 ## Python version
 
-This template uses Python 3.9. You can use pyenv to configure your environment.
+This project uses Python 3.9. You can use pyenv to configure your environment.
 
 ```
 https://github.com/pyenv/pyenv#installation
