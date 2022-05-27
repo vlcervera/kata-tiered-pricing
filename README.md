@@ -1,7 +1,6 @@
-# Template for python/poetry projects
+# Tiered pricing
 
-This is a template to get a boilerplate structure to start to develop with Python.
-
+Definition of exercice in: [Definition](./DEFINITION.md)
 ## Python version
 
 This template uses Python 3.9. You can use pyenv to configure your environment.
@@ -15,6 +14,12 @@ You can install all dependencies required for this project using:
 ````shell
 make install
 ````
+
+## Run
+You can run Tiered pricing application using:
+```shell
+make run
+```
 
 ## Linter
 You can apply linter and format tools using:

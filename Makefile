@@ -13,3 +13,5 @@ format:
 	poetry run isort --profile black .)
 test:
 	poetry run pytest tests/unit
+run:
+	poetry run python app/main.py
