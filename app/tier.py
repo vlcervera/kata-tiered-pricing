@@ -1,13 +1,12 @@
-from abc import ABC, abstractmethod
+from typing import Protocol
 
 from subscriptions import Subscriptions
 
 
-class Tier(ABC):
+class Tier(Protocol):
     price: int
 
-    @abstractmethod
-    def applies_to(self, subscriptions: int) -> bool:
+    def applies_to(self, subscriptions: Subscriptions) -> bool:
         pass
 
 
