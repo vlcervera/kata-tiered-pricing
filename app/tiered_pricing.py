@@ -1,6 +1,6 @@
 from subscriptions import Subscriptions
-from tier import TierFrom, TierRange
-from tier_exceptions import (
+from tier.tier import TierFrom, TierRange
+from tier.tier_exceptions import (
     MultipleTierFoundForSubscriptions,
     TierNotFoundForSubscriptions,
 )
@@ -19,9 +19,7 @@ class TieredPricing:
         self.tier_prices = tier_prices
 
     def calculate_for(self, subscriptions: Subscriptions) -> int:
-        tiers_for_subscriptions = [
-            tier for tier in self.tier_prices if tier.applies_to(subscriptions)
-        ]
+        tiers_for_subscriptions = [tier for tier in self.tier_prices if tier.applies_to(subscriptions)]
         if not tiers_for_subscriptions:
             raise TierNotFoundForSubscriptions(subscriptions)
 

@@ -14,4 +14,3 @@ while True:
     print(
         f"""Price={price}, subscription/price = {price / subscriptions.amount} for {subscriptions.amount} subscriptions"""
     )
-

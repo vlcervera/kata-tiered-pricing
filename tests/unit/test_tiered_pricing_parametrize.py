@@ -7,10 +7,7 @@ class TestTieredPricingShould:
     @pytest.mark.parametrize("subscriptions", [1, 2])
     def test_calculate_price_for_subscriptions_with_unit_price_299(self, subscriptions):
         pricing = TieredPricing()
-        assert (
-            pricing.calculate_for(SubscriptionsMother.create(subscriptions))
-            == subscriptions * 299
-        )
+        assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 299
 
     @pytest.mark.parametrize(
         "subscriptions",
@@ -18,10 +15,7 @@ class TestTieredPricingShould:
     )
     def test_calculate_price_for_subscriptions_with_unit_price_239(self, subscriptions):
         pricing = TieredPricing()
-        assert (
-            pricing.calculate_for(SubscriptionsMother.create(subscriptions))
-            == subscriptions * 239
-        )
+        assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 239
 
     @pytest.mark.parametrize(
         "subscriptions",
@@ -29,10 +23,7 @@ class TestTieredPricingShould:
     )
     def test_calculate_price_for_subscriptions_with_unit_price_219(self, subscriptions):
         pricing = TieredPricing()
-        assert (
-            pricing.calculate_for(SubscriptionsMother.create(subscriptions))
-            == subscriptions * 219
-        )
+        assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 219
 
     @pytest.mark.parametrize(
         "subscriptions",
@@ -58,10 +49,7 @@ class TestTieredPricingShould:
     )
     def test_calculate_price_for_subscriptions_with_unit_price_199(self, subscriptions):
         pricing = TieredPricing()
-        assert (
-            pricing.calculate_for(SubscriptionsMother.create(subscriptions))
-            == subscriptions * 199
-        )
+        assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 199
 
     @pytest.mark.parametrize(
         "subscriptions",
@@ -69,7 +57,4 @@ class TestTieredPricingShould:
     )
     def test_calculate_price_for_subscriptions_with_unit_price_149(self, subscriptions):
         pricing = TieredPricing()
-        assert (
-            pricing.calculate_for(SubscriptionsMother.create(subscriptions))
-            == subscriptions * 149
-        )
+        assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 149
