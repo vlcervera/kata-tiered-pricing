@@ -22,3 +22,5 @@ build-backend = "poetry.core.masonry.api"
 pythonpath = [
   "app", "tests"
 ]
+[tool.black]
+line-length = 120
