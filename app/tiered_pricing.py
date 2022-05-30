@@ -1,6 +1,6 @@
 from app.subscriptions import Subscriptions
-from app.tier.tier import TierFrom, TierRange
-from app.tier.tier_exceptions import (
+from app.tier.entities import TierFrom, TierRange
+from app.tier.exceptions import (
     MultipleTierFoundForSubscriptions,
     TierNotFoundForSubscriptions,
 )
