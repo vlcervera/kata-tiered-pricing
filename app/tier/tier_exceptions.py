@@ -1,4 +1,4 @@
-from subscriptions import Subscriptions
+from app.subscriptions import Subscriptions
 
 
 class TierNotFoundForSubscriptions(Exception):

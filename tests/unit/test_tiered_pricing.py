@@ -1,11 +1,11 @@
-from subscriptions import IncorrectSubscriptionsAmount
-from tier.tier import TierRange
-from tier.tier_exceptions import (
+from app.subscriptions import IncorrectSubscriptionsAmount
+from app.tier.tier import TierRange
+from app.tier.tier_exceptions import (
     MultipleTierFoundForSubscriptions,
     TierNotFoundForSubscriptions,
 )
-from tiered_pricing import TieredPricing
-from unit.mother import SubscriptionsMother
+from app.tiered_pricing import TieredPricing
+from tests.unit.mother import SubscriptionsMother
 
 
 class TestTieredPricingShould:

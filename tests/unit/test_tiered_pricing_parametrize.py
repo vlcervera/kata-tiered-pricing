@@ -1,6 +1,7 @@
 import pytest
-from tiered_pricing import TieredPricing
-from unit.mother import SubscriptionsMother
+
+from app.tiered_pricing import TieredPricing
+from tests.unit.mother import SubscriptionsMother
 
 
 class TestTieredPricingShould:

@@ -3,7 +3,9 @@ name = "challenge"
 version = "0.1.0"
 description = ""
 authors = ["Víctor Cervera <vlcervera@gmail.com>"]
-
+packages = [
+    { include = "app/**/*.py" },
+]
 [tool.poetry.dependencies]
 python = "^3.9"
 

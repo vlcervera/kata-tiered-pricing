@@ -1,5 +1,5 @@
-from subscriptions import Subscriptions
-from tiered_pricing import TieredPricing
+from app.subscriptions import Subscriptions
+from app.tiered_pricing import TieredPricing
 
 pricing = TieredPricing()
 

@@ -1,6 +1,6 @@
 from typing import Protocol
 
-from subscriptions import Subscriptions
+from app.subscriptions import Subscriptions
 
 
 class Tier(Protocol):
