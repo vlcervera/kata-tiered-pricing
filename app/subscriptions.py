@@ -14,3 +14,7 @@ class Subscriptions:
     @property
     def amount(self):
         return self._amount
+
+    @property
+    def graduated_subscriptions(self):
+        return [Subscriptions(x) for x in range(1, self.amount + 1)]

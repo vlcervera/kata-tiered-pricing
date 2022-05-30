@@ -1,6 +1,13 @@
 # Tiered pricing
 
-Definition of exercice in: [Definition](./DEFINITION.md)
+This project contains the result of two katas in the same code:
+
+[Tiered Pricing](./definitions/TIERED_PRICING.md) and 
+[Graduated Tiered Pricing](./definitions/GRADUATED_TIERED_PRICING.md)
+
+Graduated tiered pricing is an evolution of tiered pricing, so we can implement it in the same
+project and offer the possibility to execute both scenarios.
+
 ## Python version
 
 This project uses Python 3.9. You can use pyenv to configure your environment.
