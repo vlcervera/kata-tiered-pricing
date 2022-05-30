@@ -1,3 +1,5 @@
+import pytest
+
 from app.subscriptions import IncorrectSubscriptionsAmount
 from app.tier.entities import TierRange
 from app.tier.exceptions import (
@@ -51,17 +53,11 @@ class TestTieredPricingShould:
             )
         )
 
-        try:
+        with pytest.raises(MultipleTierFoundForSubscriptions):
             pricing.calculate_for(SubscriptionsMother.create(2))
-            assert False
-        except MultipleTierFoundForSubscriptions:
-            assert True
 
     def test_error_for_negative_subscriptions(self):
         pricing = TieredPricing()
 
-        try:
+        with pytest.raises(IncorrectSubscriptionsAmount):
             pricing.calculate_for(SubscriptionsMother.create(-10))
-            assert False
-        except IncorrectSubscriptionsAmount:
-            assert True
