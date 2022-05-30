@@ -31,4 +31,4 @@ class TierRange(Tier):
         self.price = price
 
     def applies_to(self, subscriptions: Subscriptions) -> bool:
-        return self.min <= subscriptions.amount <= self.max
+        return subscriptions.amount in range(self.min, self.max + 1)
