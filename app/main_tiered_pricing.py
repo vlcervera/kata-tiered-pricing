@@ -1,11 +1,11 @@
 from app.pricing.tiered_pricing import TieredPricing
 from app.vo.subscriptions import Subscriptions
 
-pricing = TieredPricing()
 print("=======================================")
 print("TIERED PRICING APPLICATION")
 print("=======================================")
 
+pricing = TieredPricing()
 while True:
 
     amount_of_subscriptions = int(input("Enter the number of subscriptions that you want to buy (enter 0 to exit): "))
