@@ -8,6 +8,10 @@ This project contains the solution of two katas related:
 Graduated tiered pricing is an evolution of tiered pricing, so we can implement it in the same
 project and offer the possibility to execute both scenarios.
 
+Improvements:
+- Duplicated code to check the tiers for susbcriptions and the management of exceptions
+- Duplicated test for the code mentioned above
+- Most probably we can refactor this part in a Tiers object that contains the tiers available and methods to get the tier for each subscription and manage the exceptions on it
 ## Python version
 
 This project uses Python 3.9. You can use pyenv to configure your environment.
