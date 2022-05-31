@@ -12,8 +12,10 @@ while True:
 
     if amount_of_subscriptions == 0:
         break
+
     subscriptions = Subscriptions(amount=amount_of_subscriptions)
     price = pricing.calculate_for(subscriptions)
+
     print(
-        f"""Price={price}, subscription/price = {price / subscriptions.amount} for {subscriptions.amount} subscriptions"""
+        f"""Price={price}, subscription/price={price / subscriptions.amount} for {subscriptions.amount} subscriptions"""
     )
