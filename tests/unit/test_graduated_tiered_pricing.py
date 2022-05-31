@@ -1,10 +1,10 @@
 import pytest
 
-from app.graduated_tiered_pricing import GraduatedTieredPricing
-from app.subscriptions import IncorrectSubscriptionsAmount
+from app.pricing.graduated_tiered_pricing import GraduatedTieredPricing
+from app.pricing.tiered_pricing import TieredPricing
 from app.tier.entities import TierRange
 from app.tier.exceptions import MultipleTierFoundForSubscriptions
-from app.tiered_pricing import TieredPricing
+from app.vo.subscriptions import IncorrectSubscriptionsAmount
 from tests.unit.mother import SubscriptionsMother
 
 

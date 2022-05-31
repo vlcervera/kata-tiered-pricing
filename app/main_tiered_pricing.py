@@ -1,7 +1,10 @@
-from app.subscriptions import Subscriptions
-from app.tiered_pricing import TieredPricing
+from app.pricing.tiered_pricing import TieredPricing
+from app.vo.subscriptions import Subscriptions
 
 pricing = TieredPricing()
+print("=======================================")
+print("TIERED PRICING APPLICATION")
+print("=======================================")
 
 while True:
 

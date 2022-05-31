@@ -1,6 +1,6 @@
 # Tiered pricing
 
-This project contains the result of two katas in the same code:
+This project contains the solution of two katas related:
 
 [Tiered Pricing](./definitions/TIERED_PRICING.md) and 
 [Graduated Tiered Pricing](./definitions/GRADUATED_TIERED_PRICING.md)
@@ -22,10 +22,15 @@ You can install all dependencies required for this project using:
 make install
 ````
 
-## Run
+## Run tiered pricing
 You can run Tiered pricing application using:
 ```shell
-make run
+make run-tiered
+```
+## Run graduated tiered pricing
+You can run Graduated Tiered pricing application using:
+```shell
+make run-graduated
 ```
 
 ## Linter
@@ -38,6 +43,12 @@ make lint
 You can apply format tools isolated from linter in case of linter fails using:
 ````shell
 make format
+````
+
+## Pre push
+You can install pre-push hook :
+````shell
+make pre-push
 ````
 
 ## Test

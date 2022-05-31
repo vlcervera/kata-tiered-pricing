@@ -1,12 +1,12 @@
 import pytest
 
-from app.subscriptions import IncorrectSubscriptionsAmount
+from app.pricing.tiered_pricing import TieredPricing
 from app.tier.entities import TierRange
 from app.tier.exceptions import (
     MultipleTierFoundForSubscriptions,
     TierNotFoundForSubscriptions,
 )
-from app.tiered_pricing import TieredPricing
+from app.vo.subscriptions import IncorrectSubscriptionsAmount
 from tests.unit.mother import SubscriptionsMother
 
 

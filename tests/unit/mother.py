@@ -1,4 +1,4 @@
-from app.subscriptions import Subscriptions
+from app.vo.subscriptions import Subscriptions
 
 
 class SubscriptionsMother:

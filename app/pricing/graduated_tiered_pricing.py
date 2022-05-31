@@ -1,11 +1,9 @@
-from functools import reduce
-
-from app.subscriptions import Subscriptions
 from app.tier.entities import TierFrom, TierRange
 from app.tier.exceptions import (
     MultipleTierFoundForSubscriptions,
     TierNotFoundForSubscriptions,
 )
+from app.vo.subscriptions import Subscriptions
 
 TIER_PRICES = (
     TierRange(min=1, max=2, price=299),

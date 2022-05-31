@@ -13,5 +13,7 @@ format:
 	poetry run isort --profile black .)
 test:
 	poetry run pytest tests/unit
-run:
-	poetry run python app/main.py
+run-tiered:
+	poetry run python app/main_tiered_pricing.py
+run-graduated:
+	poetry run python app/main_graduated_tiered_pricing.py
