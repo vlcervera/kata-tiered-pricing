@@ -8,7 +8,7 @@ This project contains the solution of two katas related:
 Graduated tiered pricing is an evolution of tiered pricing, so we can implement it in the same
 project and offer the possibility to execute both scenarios.
 
-### Improvements:
+## Improvements
 
 Currently we have duplicated code in both pricing scenarios when we retrieve the correct tier for subscriptions. We can refactor it and search a common code for this part but maybe it has no sense for this point of the exercesise. 
 Maybe if we are going to have another pricing scenario and it requires this code we can look to refactor it in a Tiers class that contains the tier pricing configuration and use it but for now we can have this part duplicated.
