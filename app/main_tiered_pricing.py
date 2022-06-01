@@ -1,5 +1,5 @@
 from app.pricing.tiered_pricing import TieredPricing
-from app.vo.subscriptions import Subscriptions
+from app.subscriptions import Subscriptions
 
 print("=======================================")
 print("TIERED PRICING APPLICATION")

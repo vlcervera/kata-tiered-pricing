@@ -1,5 +1,5 @@
 from app.pricing.graduated_tiered_pricing import GraduatedTieredPricing
-from app.vo.subscriptions import Subscriptions
+from app.subscriptions import Subscriptions
 
 print("=======================================")
 print("GRADUATED TIERED PRICING APPLICATION")
