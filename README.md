@@ -9,8 +9,9 @@ Graduated tiered pricing is an evolution of tiered pricing, so we can implement 
 project and offer the possibility to execute both scenarios.
 
 Improvements:
+
 Currently we have duplicated code in both pricing scenarios when we retrieve the correct tier for subscriptions. We can refactor it and search a common code for this part but maybe it has no sense for this point of the exercesise. 
-Mayve if we are going to have another pricing scenario and it requires this code we can look to refactor it in a Tiers class that contains the tier pricing configuration and use it but for now we can have this part duplicated.
+Maybe if we are going to have another pricing scenario and it requires this code we can look to refactor it in a Tiers class that contains the tier pricing configuration and use it but for now we can have this part duplicated.
 
 As consecuence of this duplication, we need to duplicate code in testing of both pricing scenarios to test the incorrect test cases in case of not have tier or have multiple tiers for susbcription 
 
