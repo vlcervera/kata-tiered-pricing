@@ -11,27 +11,27 @@ from tests.unit.mother import SubscriptionsMother
 
 
 class TestTieredPricingShould:
-    def test_calculate_price_for_subscriptions_with_price_299(self):
+    def test_calculate_price_for_subscriptions_with_unit_price_299(self):
         pricing = TieredPricing()
         for subscriptions in range(1, 2 + 1):
             assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 299
 
-    def test_calculate_price_for_subscriptions_with_price_239(self):
+    def test_calculate_price_for_subscriptions_with_unit_price_239(self):
         pricing = TieredPricing()
         for subscriptions in range(3, 10 + 1):
             assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 239
 
-    def test_calculate_price_for_subscription_with_price_219(self):
+    def test_calculate_price_for_subscription_with_unit_price_219(self):
         pricing = TieredPricing()
         for subscriptions in range(11, 25 + 1):
             assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 219
 
-    def test_calculate_price_for_subscription_with_price_199(self):
+    def test_calculate_price_for_subscription_with_unit_price_199(self):
         pricing = TieredPricing()
         for subscriptions in range(26, 50 + 1):
             assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 199
 
-    def test_calculate_price_for_subscription_with_price_149(self):
+    def test_calculate_price_for_subscription_with_unit_price_149(self):
         pricing = TieredPricing()
         for subscriptions in range(51, 60 + 1):
             assert pricing.calculate_for(SubscriptionsMother.create(subscriptions)) == subscriptions * 149
